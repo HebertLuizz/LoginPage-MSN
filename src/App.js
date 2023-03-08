@@ -1,4 +1,9 @@
-import ButtomSubmit from "./components/button/button";
+import ButtomSubmit from "./components/button/button"
+import styled from "styled-components"
+import background from "./images/background.jpg"
+import UserHeader from "./components/header/header"
+import TittlePage from "./components/tittle/tittle"
+import LoginForm from "./components/form/form"
 
 const AppContainer = styled.div`
   width: 100vw;

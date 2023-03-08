@@ -34,4 +34,4 @@ function ButtomSubmit() {
     )
 }
 
-export default Button
+export default ButtomSubmit
