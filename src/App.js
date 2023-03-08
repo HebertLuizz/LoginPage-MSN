@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import ButtomSubmit from "./components/button/button";
+
+const AppContainer = styled.div`
+  width: 100vw;
+  height: 100vh;
+  background-image: url('${background}');
+  background-size: cover;
+  background-position: initial;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  @media (max-width: 768px) {
+    background-color: lightskyblue;
+    background-image: linear-gradient(180deg, skyblue 0%, ghostwhite 40%, lightskyblue 100%);
+  }
+`
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <AppContainer>
+        <UserHeader />
+        <TittlePage />
+        <LoginForm />
+        <ButtomSubmit />
+      </AppContainer>
   );
 }
 
